@@ -51,7 +51,7 @@ void findLocalMax(const double A[][N], bool B[][N]){
             if(A[i][j] >= A[i][j+1]&&
 			   A[i][j] >= A[i+1][j]&&
 			   A[i][j] >= A[i][j-1]&&
-			   A[i][j] >= A[i+1][j]){
+			   A[i][j] >= A[i-1][j]){
 
 				B[i][j] = 1;
 			}
